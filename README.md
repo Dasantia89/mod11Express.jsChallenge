@@ -14,7 +14,7 @@ Note Taker
 3. Run the command 'npm i'
 4. Run the command 'node server.js'
 ## Usage Information 
-![Picture of app](./assets/Screenshot.png)
+![Picture of app](assets/Screenshot.png)
 ## License 
 This project is covered under the MIT license.   https://opensource.org/licenses/MIT
 
