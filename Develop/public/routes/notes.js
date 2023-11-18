@@ -29,4 +29,22 @@ notes.post('/', (req, res) => {
         .catch(err => console.log(err));
 });
 
+// Handle delete request for /notes. Get notes list, remove entry matching selected id, then save the new list
+notes.delete('/:id', (req, res) => {
+    console.log(req.params);
+    readFile('./public/assets/json/notes.json', 'utf-8')
+    .then(data => {
+        var id =req.params.id;
+        var noteList = JSON.parse(data);
+        noteList.forEach((note,index)=> {
+            if(note.id == id){
+                noteList.splice(index,1)
+            }
+        })
+        res.send(writeFile('./public/assets/json/notes.json', JSON.stringify(noteList)));
+    })
+    .catch(err => console.log(err));
+});
+
+
 module.exports = notes;
