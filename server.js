@@ -8,7 +8,7 @@ const app = express();
 // Assign the port to be used
 const PORT = process.env.PORT || 3001
 // Path to routes folder
-const api = require('./public/routes');
+const api = require('./routes');
 
 // Add Middleware
 app.use(express.json());
@@ -29,3 +29,4 @@ app.get('/notes', (req, res) =>
 app.listen(PORT, () =>
   console.log(`App listening at http://localhost:${PORT} 🚀`)
 );
+
