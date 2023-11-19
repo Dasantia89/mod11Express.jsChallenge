@@ -5,7 +5,7 @@ const path = require('path');
 // Declare an instance of express in the app variable
 const app = express();
 
-// Assign the port to be used
+// Assign the port to be used either with heroku or locally hosted
 const PORT = process.env.PORT || 3001
 // Path to routes folder
 const api = require('./routes');

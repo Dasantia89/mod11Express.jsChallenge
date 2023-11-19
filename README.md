@@ -15,6 +15,7 @@ Note Taker
 4. Run the command 'node server.js'
 ## Usage Information 
 ![Picture of app](Assets/Screenshot.png)
+Test a live version of the app here: https://young-stream-42863-8bb79629a13a.herokuapp.com
 ## License 
 This project is covered under the MIT license.   https://opensource.org/licenses/MIT
 
