@@ -6,7 +6,7 @@ const path = require('path');
 const app = express();
 
 // Assign the port to be used
-const port = process.env.PORT || 3001
+const PORT = process.env.PORT || 3001
 // Path to routes folder
 const api = require('./public/routes');
 
